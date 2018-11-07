@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neata Georgiana</title>
+    
+    <style>
+    body {
+    color: #00AEEF;
+    background-color: white;
+    font-size: 25px;
+    }
+    /*--------------------------------NAVIGATION-------------------------------*/
+    .navigation-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+   
+    border-right: 3px solid #00AEEF;
+    border-top: 3px solid #00AEEF;
+     text-align:center;
+    }
+   
+    .grid-itemnav{
+        border-left: 3px solid #00AEEF;
+        padding:16px;
+        align-self:center;
+        text-align:center;
+       
+    }
+    /*--------------------------------HOME-------------------------------*/
+    .home-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:300px;
+        border-right: 3px solid #00AEEF;
+        border-top: 3px solid #00AEEF;
+        border-bottom: 3px solid #00AEEF;
+    }
+    
+    .grid-itemhome{
+        border-left: 3px solid #00AEEF;
+    }
+    #homeitem1 {
+       text-align:center;
+       padding-top:3%;
+   }
+    #homeitem2{
+        text-align:center;
+    }
+   
+    #btnStart {
+        color: #00AEEF;
+        border-radius: 10px ;
+        margin-top:20%;
+     }
+    #btnStart:hover{
+         background-color: #00AEEF;
+         color: white;
+     }
+    /*-------------------------------------------------------------------*/
+    .global-container{
+        display: grid;
+        border: 3px solid #00AEEF;
+        border-top:0px;
+    }
+    /*--------------------------------TEAM-------------------------------*/
+    .team-container{
+        width:90%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:20px;
+       /* justify-content: center;*/
+        padding-left:5%;
+        padding-right:5%;
+        display: grid;
+    }
+   
+    .circle{
+        margin-bottom: 15%;
+        margin-top: 15%;
+        width: 200px;
+        height:200px;
+        border-radius:50% ;
+        border: 3px solid #00AEEF;
+        background-color: white;
+        align-self: center;
+        justify-self: center;
+    }
+   #teamitem1:hover{
+       background-color: #00AEEF ;
+       color:white;
+   }
+    #teamitem2:hover{
+       background-color: #0000FF  ;
+       color:white;
+   }
+    #teamitem3:hover{
+       background-color:  #FF00FF ;
+       color:white;
+   }
+    /*--------------------------------ABOUT-------------------------------*/
+    .about-container{
+        width:90%;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap:15px;
+        padding:5%;
+        
+        display: grid;
+    }
+   
+    .square{
+        width: 200px;
+        height:150px;
+        border-radius:20% ;
+        border: 3px solid #00AEEF;
+        margin-bottom: 15%;
+        margin-top: 15%;
+        background-color: white;
+        align-self: center;
+        justify-self: center;
+        display: grid;
+  
+    }
+    .square:hover{
+        background-color:#00AEEF;
+        color: white;
+    }
+    
+    /*--------------------------------CONTACT-------------------------------*/
+    .contact-container{
+        border: 3px solid #00AEEF;
+        border-top:0px;
+        padding-bottom:1%;
+        padding-top:1%;
+        font-size: 25px;
+        text-align:center;
+    }
+   </style>
+</head>
+<body>
+     <div class="navigation-container">
+            <div class="grid-itemnav" id="navitem1">QUIZ IT!</div>
+            <div class="grid-itemnav" id="navitem2">
+                <a href="#">HOME</a>
+             </div>
+            <div class="grid-itemnav" id="navitem3">
+                <a href="#">TEAM</a>
+            </div>
+            <div class="grid-itemnav" id="navitem4">
+             <a href="#">ABOUT</a>
+            </div>
+            <div class="grid-itemnav" id="navitem5">
+            <a href="#">CONTACT</a>
+            </div>
+    </div>
+    
+    <div class="home-container">
+        <div class="grid-itemhome" id="homeitem1">
+        <p>TEXT</p>
+        <button id="btnStart">GET STARTED</button>
+        </div>
+        <div class="grid-itemhome" id="homeitem2" >
+           <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/quiz-650-x-418_060115061449.jpg" alt="QUIZ Time"  height= 300px >
+        </div>
+    </div>
+        
+     <div class="global-container">
+        <div class="team-container">
+            <div class="circle" id="teamitem1"></div>
+            <div class="circle" id="teamitem2"></div>
+            <div class="circle" id="teamitem3"></div>
+        </div>
+   
+        <div class="about-container">
+            <div class="square" id="abouttem1"></div>
+            <div class="square" id="aboutitem2"></div>
+            <div class="square" id="aboutitem3"></div>
+            <div class="square" id="aboutitem4"></div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div>FOOTER</div>
+    </div>
+</body>
+
+</html>
